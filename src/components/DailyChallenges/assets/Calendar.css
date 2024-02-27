@@ -1,0 +1,81 @@
+.Month{
+    font-weight: 500;
+    font-size: 0.8em;    
+}
+
+.WeekFont{
+    color: #8d99ae;
+    font-size: 0.7em !important;
+    font-weight: 600;
+}
+
+.DateFont{
+    color: #000000;
+    font-size: 0.8em !important;
+    font-weight: 500;
+    z-index: 1;
+}
+
+.highlighted {
+    color: #4285f4; /* Change this to the desired font color for highlighted dates */
+}
+
+.first-highlighted {
+    color: white;
+}
+
+.last-highlighted {
+    color: white; /* Change this to the desired font color for the last date in the highlighted range */
+}
+/* Calendar.css */
+
+.gridHighlighted {
+    background-color: rgba(66, 133, 244, 0.2);
+    /* z-index: -1; */
+}
+
+/* .firstGridHighlighted {
+    background-color: #4285f4;
+} */
+
+.firstGridHighlighted {
+    position: relative;
+    background-color:rgba(66, 133, 244, 0.2) ;
+    border-top-left-radius: 50%;
+    border-bottom-left-radius: 50%;
+}
+
+.firstGridHighlighted::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    background-color: #4285f4;
+    width: 100%;
+    height: 100%; 
+}
+
+.lastGridHighlighted {
+    position: relative;
+    background-color:rgba(66, 133, 244, 0.2) ;
+    border-top-right-radius: 50%;
+    border-bottom-right-radius: 50%;
+}
+
+.lastGridHighlighted::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    background-color: #4285f4;
+    width: 100%;
+    height: 100%; 
+}
+
+.selected-date {
+    font-weight: bold;
+}
